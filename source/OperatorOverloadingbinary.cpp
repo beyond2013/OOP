@@ -9,7 +9,7 @@ float inches;
 public:
 //constructor (no args)
 Distance() : feet(0), inches(0.0)
-{ }
+{} 
 //constructor (two args)
 Distance(int ft, float in) : feet(ft), inches(in)
 { }
