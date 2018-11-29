@@ -1,0 +1,12 @@
+window_sizes 1317 713 308 1003 540 120
+cleanlooks_style
+diagrams
+  active  usecasediagram_ref 128130 // Class
+    802 432 100 A4 0 0
+end
+show_stereotypes
+selected usecasediagram_ref 128130 // Class
+open
+  usecaseview_ref 128130 // First
+end
+end
