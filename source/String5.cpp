@@ -41,6 +41,13 @@ int main()
 
   cout << "\n str5 after replace(str5.find(\"b\"),1,\"B\") : "
 		<< str5.replace(str5.find("b"),1,"B") << endl;
+ cout<<"============================================================================="<<endl;
+	string str6="Terminal";
+	cout<<str6.append("Exam")<<endl;
+	cout<<str6.size()<<endl;
+	cout<<str6.find("E")<<endl;
+	cout<<str6.replace(0,3,"tER")<<endl;
+	cout<<str6.erase(8,11)<<endl;
 	return 0;
 }
 
