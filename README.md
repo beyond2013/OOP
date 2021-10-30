@@ -12,7 +12,7 @@ Introduction to object oriented design, history and advantages of object oriente
 ## Course Assessment:
 
 Mid term exams:  30 marks  
-Terminal exams:  30 marks  
+Terminal exams:  40 marks  
 Quizes: 15 marks  
 Assignments: 15 marks  
 
