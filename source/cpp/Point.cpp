@@ -1,3 +1,7 @@
+#include<iostream>
+
+using namespace std;
+
 class Point{
 	protected:
 	int x, y;
@@ -32,3 +36,5 @@ int main(){
 	cout<<"p1.getX() = " << p1.getX();
 	cout<<"p1.getX() = " << p1.getX();
 	cout<<"p2 = " << p2;
+}
+
