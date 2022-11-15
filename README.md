@@ -32,6 +32,7 @@ Assignments: 15 marks
 3. http://www.cplusplus.com/forum/
 4. https://www.coursera.org/learn/object-oriented-java
 
-
+## Live code demo
+1. A quick game development live coding demo session delivered by [Ahsanullah](https://github.com/Ahsan-Sarbaz) can be found [here](source/dev)
 
 Note: This repository contains example programs, see source folder in the repo. Students compiling with Turbo C++ compiler have to omit the line `using namespace std;`. 
