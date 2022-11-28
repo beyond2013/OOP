@@ -15,9 +15,10 @@ public class Person {
 	
   public String toString()
 	{
-    String str="\n====================\n";
-		str = str + "\t" + first_name + " " + last_name;
-		str = str + "\n====================\n";
+    // String str="\n====================\n";
+    String str="";
+		str = str + "\t" + first_name + " " + last_name + "\n";
+		// str = str + "\n====================\n";
 		return str;
 	}
 
