@@ -24,11 +24,13 @@ public class Teacher extends Person
 		Student s1 = new Student("Moin", "Khan", 'B');
 		Teacher t1 = new Teacher("Imran", "Ali", "Lecturer");
 
+//    System.out.println(t1);   
+
 		Person[] p = new Person[3];
 	  p[0] = p1;
 	  p[1] = s1;
 	  p[2] = t1;
-   
+		
 		for(int i=0;i < p.length; i++)
 		  System.out.println(p[i]);
 	}

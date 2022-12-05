@@ -1,7 +1,7 @@
-public class Person {
+public abstract class Person {
 	
-	String first_name;
-	String last_name;
+	protected String first_name;
+	protected String last_name;
 
 	
 	Person(String fn, String ln)
@@ -11,23 +11,18 @@ public class Person {
 	}
 
 
-	//overload toString method
+	//override toString method
 	
-  public String toString()
-	{
-    // String str="\n====================\n";
-    String str="";
-		str = str + "\t" + first_name + " " + last_name + "\n";
-		// str = str + "\n====================\n";
-		return str;
-	}
+  public abstract String toString();
+	
+
 
 
 
 	public static void main(String[] args)
 	{
-		Person p = new Person("Imran", "Ali");
-		System.out.println(p);
+		Person p; //= new Person("Imran", "Ali");
+		//System.out.println(p);
 	}
 
 }
