@@ -14,7 +14,9 @@ public class Student extends Person
 	{
    String str ="\n====================\n"; 
 	 str = str + "\t";
-	 str +=  "\t";
+	 str +=  "\t"; // another way of writing above line
+
+// arithmetic assignment operators +=, -=, *=, /=, %=
 
 	 str = str +	first_name + " " + last_name;
 	 str = str + "\n";
