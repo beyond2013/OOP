@@ -3,7 +3,7 @@ public class Student extends Person
 
 	char grade;
 
-	Student(String fn, String ln, char g)
+	public Student(String fn, String ln, char g)
 	{
 		super(fn, ln);
     grade = g; 
@@ -22,7 +22,15 @@ public class Student extends Person
 
 	public static void main(String[] args)
 	{
+		Person p1 = new Person("Imran", "Ali");
 		Student s1 = new Student("Moin", "Khan", 'A');
-		System.out.println(s1);
+    
+		Person[] p = new Person[2];
+		p[0] = p1;
+		p[1] = s1;
+
+
+		for( int i=0; i < p.length ; i++)
+			System.out.println(p[i]);
 	}
 }
