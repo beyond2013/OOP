@@ -21,7 +21,7 @@ public abstract class Person {
 
 	public static void main(String[] args)
 	{
-		Person p; //= new Person("Imran", "Ali");
+		Person p;// = new Person("Imran", "Ali");
 		//System.out.println(p);
 	}
 
