@@ -67,6 +67,6 @@ int main()
 
 	h3.add_height(h1, h2);
 	cout << "h3" << endl;
-	444 h3.showheight();
+	h3.showheight();
 	return 0;
 }
