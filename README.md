@@ -18,6 +18,8 @@ Logistics for course offered in Computer Science and IT Department University of
   + access modifiers
   + const vs non-const functions
   + static data members & functions
+  + [arrays as class member data](./source/cpp/ArrayDataMember.cpp)
+  + [arrays of objects](./source/cpp/ArraysObject.cpp)
 - Function overloading
 - Operator overloading
 - Identification of classes and their relationships
