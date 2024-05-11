@@ -11,9 +11,10 @@ Imagine a toolbox filled with various tools – wrenches, screwdrivers, hammers,
 
 * **Real-world modeling:** OOD allows you to represent real-world entities like cars, accounts, or documents as objects, making your code more intuitive.  
 For example a shopping cart modelled with properties like capacity, weight and methods like addItem(), removeItem()
-<img align="left" src="../figs/shoppingcart.png" alt="Toolbox">
 
 * **Modularity:** Objects are self-contained units, promoting code reusability and easier maintenance.
+<img align="left" src="../figs/shoppingcart.png" alt="Toolbox">
+
 * **Maintainability:** Changes made to one object are less likely to affect others, reducing the risk of unintended consequences.
 * **Scalability:** Complex systems can be broken down into smaller, manageable objects, making them easier to expand and modify.
 
