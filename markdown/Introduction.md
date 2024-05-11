@@ -1,19 +1,27 @@
-# Introduction to Object-Oriented Design (OOD)
+# Introduction to Object Oriented Design (OOD)
 
-Welcome to the world of object-oriented programming (OOP)! In this first lecture, we'll delve into the fundamental concept of **object-oriented design (OOD)**, which serves as the blueprint for building robust and maintainable software using OOP principles.
+Welcome to the world of object-oriented programming (OOP). In this first lecture, we'll delve into the fundamental concept of object-oriented design (OOD), which serves as the blueprint for building robust and maintainable software using OOP principles.
 
 ## What is OOD?
 
-<img align="left" src="../figs/toolbox.png" alt="Toolbox">
-Imagine a toolbox filled with various tools – wrenches, screwdrivers, hammers, each with a specific function. OOD is like organizing your code into these well-defined tools – **objects**.  Each object has its own **properties** (data) and **behaviors** (functions) that work together to achieve a specific task.
+<img align="right" src="../figs/toolbox.png" alt="Toolbox">
+
+Imagine a toolbox filled with various tools:  
+
+- wrenches
+- screwdrivers
+- hammers, each with a specific function.  
+ OOD is like organizing your code into these well-defined tools objects.  Each **object** has its own **properties** (data) and **behaviors** (functions) that work together to achieve a specific task.
 
 ## Why OOD?
+
+<img align="right" src="../figs/shoppingcart.png" alt="Toolbox">
 
 * **Real-world modeling:** OOD allows you to represent real-world entities like cars, accounts, or documents as objects, making your code more intuitive.  
 For example a shopping cart modelled with properties like capacity, weight and methods like addItem(), removeItem()
 
+
 * **Modularity:** Objects are self-contained units, promoting code reusability and easier maintenance.
-<img align="left" src="../figs/shoppingcart.png" alt="Toolbox">
 
 * **Maintainability:** Changes made to one object are less likely to affect others, reducing the risk of unintended consequences.
 * **Scalability:** Complex systems can be broken down into smaller, manageable objects, making them easier to expand and modify.
