@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 class Height
 {
@@ -17,6 +18,9 @@ public:
 
 	Height() : feet(0), inches(0) {} // this is constructor
 
+	/* overloaded constructors*/
+	Height(int f, int in) : feet(f), inches(in) {}
+
 	void setheight(int ft, int in)
 	{
 		feet = ft;
@@ -25,7 +29,8 @@ public:
 
 	void showheight()
 	{
-		cout << feet << "\'-" << inches << '\"' << "\n";
+		// cout << feet << "\'-" << inches << '\"' << "\n";
+		cout << setw(2) << feet << "\'-" << setw(2) << inches << '\"' << "\n";
 	}
 
 	void add_height(Height h1, Height h2)
@@ -39,6 +44,8 @@ public:
 		}
 		feet += h1.feet + h2.feet;
 	}
+
+	/* The default copy constructor */
 };
 
 int main()
@@ -49,6 +56,8 @@ int main()
 	 */
 
 	int h1_feet, h1_inches, h2_feet, h2_inches;
+	char dummychar;
+	/*
 	cout << "\n Enter value for h1.feet ";
 	cin >> h1_feet;
 	cout << "\n Enter value for h1.inches";
@@ -58,15 +67,20 @@ int main()
 	cin >> h2_feet;
 	cout << "\n Enter value for h2.inches";
 	cin >> h2_inches;
+	*/
+	cout << "Enter Height ft-inches\t ";	  // << insertion or put to operator
+	cin >> h1_feet >> dummychar >> h1_inches; // >> extraction or get from operator
+
+	cout << "Enter another Height ft-inches\t";
+	cin >> h2_feet >> dummychar >> h2_inches;
+
 	h1.setheight(h1_feet, h1_inches);
 	h2.setheight(h2_feet, h2_inches);
-	cout << "h1" << endl;
+
 	h1.showheight();
-	cout << "h2" << endl;
 	h2.showheight();
 
 	h3.add_height(h1, h2);
-	cout << "h3" << endl;
 	h3.showheight();
 	return 0;
 }

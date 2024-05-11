@@ -3,25 +3,29 @@ using namespace std;
 
 class Distance
 {
-	private:
-		int feet;
-		float inches;
-	public:
-		void setdist(int ft, float in)
-		{ feet = ft; inches = in; }
+private:
+	int feet;
+	float inches;
 
-		void getdist()
-		{
-			cout << "\nEnter feet: ";
-			cin >> feet;
-			cout << "\nEnter inches: ";
-			cin >> inches;
-		}
+public:
+	void setdist(int ft, float in)
+	{
+		feet = ft;
+		inches = in;
+	}
 
-		void showdist()
-		{
-			cout << feet << "\'-" << inches << '\"';
-		}
+	void getdist()
+	{
+		cout << "\nEnter feet: ";
+		cin >> feet;
+		cout << "\nEnter inches: ";
+		cin >> inches;
+	}
+
+	void showdist()
+	{
+		cout << feet << "\'-" << inches << '\"';
+	}
 };
 
 int main()
@@ -31,7 +35,7 @@ int main()
 	dist1.setdist(11, 6.25);
 	dist2.getdist();
 
-	cout << "\ndist1 = "; 
+	cout << "\ndist1 = ";
 	dist1.showdist();
 	cout << "\ndist2 = ";
 	dist2.showdist();
@@ -39,6 +43,3 @@ int main()
 
 	return 0;
 }
-
-
-
