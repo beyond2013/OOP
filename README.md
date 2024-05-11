@@ -7,7 +7,32 @@ Logistics for course offered in Computer Science and IT Department University of
 
 ## Course Content:
 
-Introduction to object oriented design, history and advantages of object oriented design, introduction to object oriented programming concepts, classes, objects, data encapsulation, constructors, destructors, access modifiers, const vs non-const functions, static data members & functions, function overloading, operator overloading, identification of classes and their relationships, composition, aggregation, inheritance, multiple inheritance, polymorphism, abstract classes and interfaces, generic programming concepts, function & class templates, standard template library, object streams, data and object serialization using object streams, exception handling.
+- [Introduction to object oriented design](markdown/Introduction.md)
+- History and advantages of object oriented design
+- Introduction to object oriented programming concepts
+  + classes
+  + objects
+  + data encapsulation
+  + constructors
+  + destructors
+  + access modifiers
+  + const vs non-const functions
+  + static data members & functions
+- Function overloading
+- Operator overloading
+- Identification of classes and their relationships
+  + composition
+  + aggregation
+- Inheritance
+  + multiple inheritance
+- Polymorphism
+- Abstract classes and interfaces
+- Generic programming concepts
+- Function & class templates
+- Standard template library
+- Object streams
+- Data and object serialization using object streams
+- Exception handling
 
 ## Course Assessment:
 
