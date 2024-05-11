@@ -1,9 +1,2 @@
-*.zip
-*.ods
-*.pdf
-*.jpg
-Turbo*
+admin/
 
-VU/
-bin/
-*.html
