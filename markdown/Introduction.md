@@ -4,8 +4,8 @@ Welcome to the world of object-oriented programming (OOP)! In this first lecture
 
 ## What is OOD?
 
-Imagine a toolbox filled with various tools – wrenches, screwdrivers, hammers, each with a specific function. OOD is like organizing your code into these well-defined tools – **objects**.  Each object has its own **properties** (data) and **behaviors** (functions) that work together to achieve a specific task.
 <img align="left" src="../figs/toolbox.png" alt="Toolbox">
+Imagine a toolbox filled with various tools – wrenches, screwdrivers, hammers, each with a specific function. OOD is like organizing your code into these well-defined tools – **objects**.  Each object has its own **properties** (data) and **behaviors** (functions) that work together to achieve a specific task.
 
 ## Why OOD?
 
