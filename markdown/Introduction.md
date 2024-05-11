@@ -5,14 +5,13 @@ Welcome to the world of object-oriented programming (OOP)! In this first lecture
 ## What is OOD?
 
 Imagine a toolbox filled with various tools – wrenches, screwdrivers, hammers, each with a specific function. OOD is like organizing your code into these well-defined tools – **objects**.  Each object has its own **properties** (data) and **behaviors** (functions) that work together to achieve a specific task.
-![toolbox](../figs/toolbox.png)
+<img align="left" src="../figs/toolbox.png" alt="Toolbox">
 
 ## Why OOD?
 
 * **Real-world modeling:** OOD allows you to represent real-world entities like cars, accounts, or documents as objects, making your code more intuitive.  
 For example a shopping cart modelled with properties like capacity, weight and methods like addItem(), removeItem()
-
-![shoppingcart](../figs/shoppingcart.png)
+<img align="left" src="../figs/shoppingcart.png" alt="Toolbox">
 
 * **Modularity:** Objects are self-contained units, promoting code reusability and easier maintenance.
 * **Maintainability:** Changes made to one object are less likely to affect others, reducing the risk of unintended consequences.
