@@ -21,7 +21,7 @@ Logistics for course offered in Computer Science and IT Department University of
   + [arrays as class member data](./source/cpp/ArrayDataMember.cpp)
   + [arrays of objects](./source/cpp/ArraysObject.cpp)
 - Function overloading
-- Operator overloading
+- [Operator overloading](./markdown/overloading.md)
 - Identification of classes and their relationships
   + composition
   + aggregation
