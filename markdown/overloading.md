@@ -23,3 +23,11 @@ Remember, while operator overloading is powerful, it's important to use it judic
 - [Overloading increment operator so that it can be used in assignment statement](../source/cpp/OperatorOverloading2.cpp)
 - [Nameless Temporary Objects](../source/cpp/OperatorOverloading3.cpp)
 - [Overloading binary operator +](../source/cpp/OperatorOverloadingbinary.cpp)
+
+## Excercise
+
+To practice and have a better understanding of the concept do the following:
+- Create a class Point which can represent point on graph with two major axis, x and y 
+- Create two data members of the class should be integers with appropriate names and scope
+- Create default and 2 argument constructor for the point class
+- Overload the binary operator which can add two points e.g. p1(2, 3) and p2(4, 5), the addition p1 + p2 should give (2+4=6, 3+5=8)
