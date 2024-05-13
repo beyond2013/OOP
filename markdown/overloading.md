@@ -24,6 +24,8 @@ Remember, while operator overloading is powerful, it's important to use it judic
 - [Nameless Temporary Objects](../source/cpp/OperatorOverloading3.cpp)
 - [Overloading postfix increment Operator](../source/cpp/OperatorOverloading4.cpp)
 - [Overloading binary operator +](../source/cpp/OperatorOverloadingbinary.cpp)
+- [Overloading comparison operator < ](../source/cpp/ComparingDistances.cpp)
+- [Arithmetic Assignment operator +=](../source/cpp/OverloadedAA.cpp)
 
 ## Excercise
 

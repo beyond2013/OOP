@@ -2,11 +2,11 @@
 using namespace std;
 class Distance
 {
-private:
-    int feet;
-    float inches;
 
 public:
+    Distance() = default;                                // 0 argument default constructor
+    Distance(int f, float inc) : feet(f), inches(inc) {} // 2 argument constructor
+
     void setdist(int ft, float in)
     {
         feet = ft;
@@ -25,4 +25,29 @@ public:
     {
         cout << feet << "\'-" << inches << '\"';
     }
+
+    bool operator<(Distance) const;
+    void operator+=(Distance);
+
+private:
+    int feet;
+    float inches;
 };
+bool Distance::operator<(Distance d2) const // return the sum
+{
+    float bf1 = feet + inches / 12;
+    float bf2 = d2.feet + d2.inches / 12;
+    return (bf1 < bf2) ? true : false;
+}
+
+void Distance::operator+=(Distance d2)
+{
+    feet += d2.feet;     // add the feet
+    inches += d2.inches; // add the inches
+
+    if (inches >= 12.0) // if total exceeds 12.0,
+    {                   // then decrease inches
+        inches -= 12.0; // by 12.0 and
+        feet++;         // increase feet  by 1
+    }
+}
