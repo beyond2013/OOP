@@ -26,6 +26,7 @@ Remember, while operator overloading is powerful, it's important to use it judic
 - [Overloading binary operator +](../source/cpp/OperatorOverloadingbinary.cpp)
 - [Overloading comparison operator < ](../source/cpp/ComparingDistances.cpp)
 - [Arithmetic Assignment operator +=](../source/cpp/OverloadedAA.cpp)
+- [Overloaded subscript operator []](../source/cpp/arrover3.cpp)
 
 ## Excercise
 
