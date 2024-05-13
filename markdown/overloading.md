@@ -22,6 +22,7 @@ Remember, while operator overloading is powerful, it's important to use it judic
 - [Overloading increment operator](../source/cpp/OperatorOverloading1.cpp)
 - [Overloading increment operator so that it can be used in assignment statement](../source/cpp/OperatorOverloading2.cpp)
 - [Nameless Temporary Objects](../source/cpp/OperatorOverloading3.cpp)
+- [Overloading postfix increment Operator](../source/cpp/OperatorOverloading4.cpp)
 - [Overloading binary operator +](../source/cpp/OperatorOverloadingbinary.cpp)
 
 ## Excercise
