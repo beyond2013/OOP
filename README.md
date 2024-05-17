@@ -8,7 +8,7 @@ Logistics for course offered in Computer Science and IT Department University of
 ## Course Content:
 
 - [Introduction to object oriented design](markdown/Introduction.md)
-- History and advantages of object oriented design
+- [History and advantages of object oriented design](markdown/history.md)
 - Introduction to object oriented programming concepts
   + classes
   + objects
