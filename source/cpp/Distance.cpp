@@ -8,13 +8,13 @@ private:
 	float inches;
 
 public:
-	void setdist(int ft, float in)
+	void setDist(int ft, float in)
 	{
 		feet = ft;
 		inches = in;
 	}
 
-	void getdist()
+	void getDist()
 	{
 		cout << "\nEnter feet: ";
 		cin >> feet;
@@ -22,7 +22,7 @@ public:
 		cin >> inches;
 	}
 
-	void showdist()
+	void showDist()
 	{
 		cout << feet << "\'-" << inches << '\"';
 	}
@@ -32,13 +32,13 @@ int main()
 {
 	Distance dist1, dist2;
 
-	dist1.setdist(11, 6.25);
-	dist2.getdist();
+	dist1.setDist(11, 6.25);
+	dist2.getDist();
 
 	cout << "\ndist1 = ";
-	dist1.showdist();
+	dist1.showDist();
 	cout << "\ndist2 = ";
-	dist2.showdist();
+	dist2.showDist();
 	cout << endl;
 
 	return 0;
