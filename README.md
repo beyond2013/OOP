@@ -12,10 +12,10 @@ Logistics for course offered in Computer Science and IT Department University of
 - [Introduction to object oriented programming concepts](markdown/introOOP.md)
   + [classes](markdown/class.md)
   + [objects](markdown/object.md)
+  + [access modifiers](markdown/accessmodifier.md)
   + data encapsulation
   + constructors
   + destructors
-  + access modifiers
   + const vs non-const functions
   + static data members & functions
   + [arrays as class member data](./source/cpp/ArrayDataMember.cpp)
