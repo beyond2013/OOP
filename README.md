@@ -9,9 +9,9 @@ Logistics for course offered in Computer Science and IT Department University of
 
 - [Introduction to object oriented design](markdown/Introduction.md)
 - [History and advantages of object oriented design](markdown/history.md)
-- Introduction to object oriented programming concepts
-  + classes
-  + objects
+- [Introduction to object oriented programming concepts](markdown/introOOP.md)
+  + [classes](markdown/class.md)
+  + [objects](markdown/object.md)
   + data encapsulation
   + constructors
   + destructors
