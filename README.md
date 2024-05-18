@@ -14,7 +14,7 @@ Logistics for course offered in Computer Science and IT Department University of
   + [objects](markdown/object.md)
   + [access modifiers](markdown/accessmodifier.md)
   + [constructors](markdown/constructor.md)
-  + destructors
+  + [destructors](markdown/destructor.md)
   + data encapsulation
   + const vs non-const functions
   + static data members & functions
