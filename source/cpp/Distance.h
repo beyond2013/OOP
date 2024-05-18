@@ -1,4 +1,5 @@
 #include <iostream>
+#include <typeinfo>
 using namespace std;
 class Distance
 {
@@ -35,9 +36,15 @@ private:
 };
 bool Distance::operator<(Distance d2) const // return the sum
 {
+    /*
     float bf1 = feet + inches / 12;
     float bf2 = d2.feet + d2.inches / 12;
-    return (bf1 < bf2) ? true : false;
+    */
+
+    float bf1 = feet * 12 + inches;
+    float bf2 = d2.feet * 12 + d2.inches;
+
+    return (bf1 < bf2) ? true : false; // ternary operator
 }
 
 void Distance::operator+=(Distance d2)
