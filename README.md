@@ -29,7 +29,6 @@ Logistics for course offered in Computer Science and IT Department University of
   + aggregation
 - Polymorphism
 - Abstract classes and interfaces
-- Generic programming concepts
 - Function & class templates
 - Standard template library
 - Object streams
