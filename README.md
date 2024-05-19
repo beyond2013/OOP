@@ -20,7 +20,7 @@ Logistics for course offered in Computer Science and IT Department University of
   + [static data members & functions](static.md)
   + [arrays as class member data](./source/cpp/ArrayDataMember.cpp)
   + [arrays of objects](./source/cpp/ArraysObject.cpp)
-- Function overloading
+- [Function overloading](./markdown/functionOverloading.md)
 - [Operator overloading](./markdown/overloading.md)
 - [Inheritance](./markdown/inheritance.md)
   + multiple inheritance
