@@ -22,11 +22,11 @@ Logistics for course offered in Computer Science and IT Department University of
   + [arrays of objects](./source/cpp/ArraysObject.cpp)
 - Function overloading
 - [Operator overloading](./markdown/overloading.md)
+- [Inheritance](./markdown/inheritance.md)
+  + multiple inheritance
 - Identification of classes and their relationships
   + composition
   + aggregation
-- Inheritance
-  + multiple inheritance
 - Polymorphism
 - Abstract classes and interfaces
 - Generic programming concepts
