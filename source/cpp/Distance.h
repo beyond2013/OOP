@@ -5,7 +5,8 @@ class Distance
 {
 
 public:
-    Distance() = default;                                // 0 argument default constructor
+    // Distance() = default;                                // 0 argument default constructor
+    Distance() : feet(0), inches(0.0) {}
     Distance(int f, float inc) : feet(f), inches(inc) {} // 2 argument constructor
 
     void setdist(int ft, float in)
@@ -24,7 +25,7 @@ public:
 
     void showdist()
     {
-        cout << feet << "\'-" << inches << '\"';
+        cout << feet << "\'-" << inches << '\"' << endl;
     }
 
     bool operator<(Distance) const;

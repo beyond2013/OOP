@@ -8,27 +8,33 @@ const int LIMIT = 10;
 
 class safearay
 {
-	private:
-		int arr[LIMIT];
-	public:
-		int& access(int n)			//note: return by reference
+private:
+	int arr[LIMIT];
+
+public:
+	int &access(int n) // note: return by reference
+	{
+		if (n < 0 || n >= LIMIT)
 		{
-			if( n< 0 || n>=LIMIT )
-			{ cout << "\nIndex out of bounds\n"; exit(1); }
-			return arr[n];
+			cout << "\nIndex out of bounds\n";
+			exit(1);
 		}
+		return arr[n];
+	}
 };
 
 int main()
 {
 	safearay sa1;
 	int j;
-	for(j=0; j<LIMIT; j++)
-		sa1.access(j) = j*10;
-	for(j=0; j<LIMIT; j++)
+	for (j = 0; j < LIMIT; j++)		  // assign values to array using access function
+		sa1.access(j) = (j + 1) * 10; // notice access used on left side
+
+	for (j = 0; j < LIMIT; j++)
 	{
-		int temp = sa1.access(j);
-		cout << "Element " << j << " is " << temp << endl;
+		// int temp = sa1.access(j); // notice access used on right side
+		// cout << "Element " << j << " is " << temp << endl;
+		cout << "Element " << j << " is " << sa1.access(j) << endl;
 	}
 	return 0;
 }
