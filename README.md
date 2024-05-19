@@ -16,7 +16,7 @@ Logistics for course offered in Computer Science and IT Department University of
   + [constructors](markdown/constructor.md)
   + [destructors](markdown/destructor.md)
   + [data encapsulation](markdown/encapsulation.md)
-  + [const vs non-const functions](const.md)
+  + [const vs non-const functions](markdown/const.md)
   + static data members & functions
   + [arrays as class member data](./source/cpp/ArrayDataMember.cpp)
   + [arrays of objects](./source/cpp/ArraysObject.cpp)
