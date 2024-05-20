@@ -48,3 +48,6 @@ Here's a breakdown of the key concepts:
 * When there's a clear "is-a" relationship between classes.
 * When there's a base class with common properties and methods that can be reused by derived classes.
 * To avoid code duplication and promote code maintainability.
+
+# Programming example
+- [Account class](../source/cpp/AccountInheritance.cpp)
