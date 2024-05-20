@@ -1,4 +1,5 @@
 #include <iostream>
+// revision of topic for sami and khizar
 
 using std::cout;
 using std::endl;
@@ -45,5 +46,7 @@ int main()
     cout << power(2) << endl;
     cout << power(2, 3) << endl;
     cout << power(4) << endl;
+
+    // just for demo
     return 0;
 }
