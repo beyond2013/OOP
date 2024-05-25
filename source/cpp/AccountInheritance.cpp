@@ -3,10 +3,11 @@
 
 class Account
 {
-public:
+protected:
     std::string name;
     double balance;
 
+public:
     Account(const std::string &name, double balance) : name(name), balance(balance) {}
 
     void Deposit(double amount)
@@ -51,23 +52,35 @@ public:
         // Initialize interestRate in the constructor
         this->interestRate = interestRate;
     }
-
-    // No function overriding here (derived class uses inherited functions)
+    // over ride Deposit
+    void Deposit(double amount)
+    {
+        if (amount > 100)
+        {
+            balance += amount;
+            balance += (amount * interestRate);
+            std::cout << "Deposit successful for " << name << std::endl;
+        }
+        else
+        {
+            std::cout << "Invalid deposit amount." << std::endl;
+        }
+    }
 };
 
 int main()
 {
-    Account checkingAccount("John Doe", 1000);
-    SavingsAccount savingsAccount("Jane Smith", 500, 0.02); // 2% interest (stored in SavingsAccount)
+    Account checkingAccount("John Doe", 1000.50);
+    SavingsAccount savingsAccount("Jane Smith", 500.80, 0.02); // 2% interest (stored in SavingsAccount)
 
-    checkingAccount.Deposit(500);
+    checkingAccount.Deposit(500.90);
     checkingAccount.PrintBalance(); // Output: John Doe's account balance: $1500
 
-    savingsAccount.Deposit(200);   // Uses inherited Deposit function
-    savingsAccount.PrintBalance(); // Output: Jane Smith's account balance: $700
+    savingsAccount.Deposit(200.75); // Uses inherited Deposit function
+    savingsAccount.PrintBalance();  // Output: Jane Smith's account balance: $700
 
-    savingsAccount.Withdraw(300);  // Uses inherited Withdraw function
-    savingsAccount.PrintBalance(); // Output: Jane Smith's account balance: $400
+    savingsAccount.Withdraw(300.60); // Uses inherited Withdraw function
+    savingsAccount.PrintBalance();   // Output: Jane Smith's account balance: $400
 
     return 0;
 }
