@@ -52,9 +52,15 @@ private:
 
 int main()
 {
+    // int *ptr;  int age = 20; ptr = &age;
+
     BankAccount *genericPtr;    // Base class pointer
     SavingAccount mySavings;    // Create a SavingAccount object
     CheckingAccount myChecking; // Create a CheckingAccount object
+
+    BankAccount myobj;
+    genericPtr = &myobj;
+    genericPtr->deposit(200.0); // guess ??
 
     genericPtr = &mySavings;    // Points to SavingAccount
     genericPtr->deposit(100.0); // Calls BankAccount's deposit (incorrect)
