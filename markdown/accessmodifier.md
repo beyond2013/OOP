@@ -2,9 +2,9 @@
 
 In object-oriented programming, `public`, `private`, and `protected` are called **access modifiers**. They are keywords that define the accessibility of a class's members (properties and methods) to other parts of the program.
 
-* **Public:** Members declared as public can be accessed from anywhere in the program,  including outside the class itself. This is the default access level if no modifier is specified.
+* **Public:** Members declared as public can be accessed from anywhere in the program,  including outside the class itself. 
 
-* **Private:** Members declared as private can only be accessed from within the class itself. This is useful for encapsulating data and ensuring it can only be modified through the class's methods.
+* **Private:** Members declared as private can only be accessed from within the class itself. This is useful for encapsulating data and ensuring it can only be modified through the class's methods. This is the default access level if no modifier is specified.
 
 * **Protected:** Members declared as protected can be accessed from within the class and by classes that inherit from it. This allows for controlled inheritance and data sharing between parent and child classes.
 
