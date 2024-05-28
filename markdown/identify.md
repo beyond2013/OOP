@@ -157,27 +157,27 @@ Design a library management system that handles books, members, loans, and libra
 #### UML Class Diagram:
 
 ```plaintext
-+-----------------+       +-----------------+       +-----------------+
-|     Library     |       |      Book       |       |     Member      |
-|-----------------|       |-----------------|       |-----------------|
-| - books: vector |       | - title: string |       | - name: string  |
-| - members: vector|<>----| - author: string|<------| - memberId: int |
-| - librarians: vector|   +-----------------+       | - loans: vector |
-|-----------------|                               +-----------------+
-| + addBook()     |                                      |
-| + addMember()   |                                      |
-| + addLibrarian()|                                      |
-+-----------------+                                      |
-                                                          |
-                                                          |
-                 +----------------+                       |
-                 |     Loan       |<----------------------+
-                 |----------------|
-                 | - loanDate: Date|
-                 | - returnDate: Date|
-                 | - book: Book    |
-                 | - member: Member |
-                 +----------------+
++----------------------+       +-----------------+       +-----------------+
+|     Library          |       |      Book       |       |     Member      |
+|----------------------|       |-----------------|       |-----------------|
+| - books: vector      |       | - title: string |       | - name: string  |
+| - members: vector    |<>-----| - author: string|<------| - memberId: int |
+| - librarians: vector |       +-----------------+       | - loans: vector |
+|----------------------|                                 +-----------------+
+| + addBook()          |                                      |
+| + addMember()        |                                      |
+| + addLibrarian()     |                                      |
++----------------------+                                      |
+                                                              |
+                                                              |
+                +-------------------+                         |
+                |     Loan          | <-----------------------+
+                |-------------------|
+                | - loanDate: Date  |
+                | - returnDate: Date|
+                | - book: Book      |
+                | - member: Member  |
+                +-------------------+
 ```
 
 ### 5. Conclusion
