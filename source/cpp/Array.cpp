@@ -3,17 +3,25 @@
 
 #include <iostream>
 using namespace std;
-const int LIMIT=10;
-int main(){
-	int marks[LIMIT];
-	int counter;
+const int LIMIT = 10;
+int main()
+{
+	const int marks[LIMIT] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
 
-  marks[3]= 10;
+	// old way of iterating over array
+	/*
+	size_t counter;
 
-	for(counter=0;counter <= LIMIT; counter++)
+	 for(counter=0;counter <= LIMIT; counter++)
+	 {
+		 cout << marks[counter]<< endl;
+	 }
+	 */
+
+	cout << "Elements of array marks" << endl;
+	for (int element : marks)
 	{
-		cout << marks[counter]<< endl;
+		cout << element << endl;
 	}
+	return 0;
 }
-
-
