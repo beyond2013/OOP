@@ -2,3 +2,16 @@ admin/
 .vscode
 source/.vscode
 pastpapers/
+
+# Ignore all files in the source/cpp/bin directory
+source/cpp/bin/
+
+# Track all C++ source files inside source/cpp
+# This assumes your C++ source files have the extensions .cpp, .h, .hpp, etc.
+!source/cpp/**/*.cpp
+!source/cpp/**/*.h
+!source/cpp/**/*.hpp
+
+# Ensure the directories leading to the source files are not ignored
+!source/
+!source/cpp/
