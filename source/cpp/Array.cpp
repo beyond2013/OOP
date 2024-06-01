@@ -3,10 +3,10 @@
 
 #include <iostream>
 using namespace std;
-const int LIMIT = 10;
+const int LIMIT = 11;
 int main()
 {
-	const int marks[LIMIT] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+	const int marks[LIMIT] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22};
 
 	// old way of iterating over array
 	/*
@@ -18,8 +18,8 @@ int main()
 	 }
 	 */
 
-	cout << "Elements of array marks" << endl;
-	for (int element : marks)
+	cout << "Elements of array marks\t" << endl;
+	for (int element : marks) // range based for loop
 	{
 		cout << element << endl;
 	}
