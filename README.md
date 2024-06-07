@@ -30,8 +30,8 @@ Logistics for course offered in Computer Science and IT Department University of
 - [Identification of classes and their relationships](./markdown/identify.md)
 - [Polymorphism](./markdown/polymorphism.md)
 - [Abstract classes and interfaces](./markdown/AbstractClassesInterfaces.md)
-- Function & class templates
-- Standard template library
+- [Function & class templates](./markdown/functionAndClassTemplates.md)
+- [Standard template library](./markdown/standardTemplateLibrary.md)
 - Object streams
 - Data and object serialization using object streams
 - Exception handling
