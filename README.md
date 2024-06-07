@@ -28,7 +28,7 @@ Logistics for course offered in Computer Science and IT Department University of
   + [virtual functions](./markdown/virtualfunctions.md)
   + [multiple inheritance](./markdown/multipleInheritance.md)
 - [Identification of classes and their relationships](./markdown/identify.md)
-- Polymorphism
+- [Polymorphism](./markdown/polymorphism.md)
 - Abstract classes and interfaces
 - Function & class templates
 - Standard template library
