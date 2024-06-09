@@ -33,7 +33,7 @@ Logistics for course offered in Computer Science and IT Department University of
 - [Function & class templates](./markdown/functionAndClassTemplates.md)
 - [Standard template library](./markdown/standardTemplateLibrary.md)
 - [Object streams](./markdown/streams.md)
-- Data and object serialization using object streams
+- [Data and object serialization using object streams](./markdown/serialization.md)
 - Exception handling
 
 ## Course Assessment:
