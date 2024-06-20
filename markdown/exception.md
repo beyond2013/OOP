@@ -120,3 +120,134 @@ Exception handling in C++ is a mechanism that allows the program to manage error
 5. **Resource Management**: Use RAII (Resource Acquisition Is Initialization) to manage resources properly and ensure they are released even when exceptions occur.
 
 By following these guidelines and understanding the basics, you can effectively handle exceptions in C++ and write robust and maintainable code.
+
+# When creating a class where does exception handling code is mostly included?
+
+When creating a class in C++, exception handling code is typically included in several key areas to ensure robustness and proper error handling. These areas include constructors, member functions, and sometimes destructors. Let's discuss each of these in detail:
+
+## 1. Constructors
+
+Constructors are critical because they initialize the object. If a constructor fails, it should throw an exception to indicate that the object could not be properly created. Exception handling in constructors ensures that resources are properly managed, and partially constructed objects are not left in an invalid state.
+
+```cpp
+#include <iostream>
+#include <stdexcept>
+
+class MyClass {
+public:
+    MyClass(int value) {
+        if (value <= 0) {
+            throw std::invalid_argument("Value must be positive");
+        }
+        this->value = value;
+    }
+
+private:
+    int value;
+};
+
+int main() {
+    try {
+        MyClass obj(-1); // This will throw an exception
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Caught an exception in constructor: " << e.what() << std::endl;
+    }
+    return 0;
+}
+```
+
+## 2. Member Functions
+
+Member functions often include exception handling to deal with invalid inputs, resource management issues, or other runtime errors. This ensures that the class can handle unexpected situations gracefully.
+
+```cpp
+class MyClass {
+public:
+    void setValue(int value) {
+        if (value <= 0) {
+            throw std::invalid_argument("Value must be positive");
+        }
+        this->value = value;
+    }
+
+private:
+    int value;
+};
+
+int main() {
+    MyClass obj(10);
+    try {
+        obj.setValue(-5); // This will throw an exception
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Caught an exception in member function: " << e.what() << std::endl;
+    }
+    return 0;
+}
+```
+
+## 3. Destructors
+
+Destructors should generally avoid throwing exceptions because they are called during stack unwinding when another exception is already in progress, which can lead to `std::terminate` being called. However, destructors can use exception handling to catch exceptions and log errors or clean up resources safely.
+
+```cpp
+class MyClass {
+public:
+    ~MyClass() {
+        try {
+            // Cleanup code that might throw an exception
+        } catch (...) {
+            // Log the error, but do not rethrow
+            std::cerr << "Exception caught in destructor" << std::endl;
+        }
+    }
+};
+```
+
+## 4. Resource Management (RAII)
+
+In classes managing resources such as dynamic memory, file handles, or network connections, exception handling is crucial to ensure resources are released properly. This is often done using the RAII (Resource Acquisition Is Initialization) idiom, where resources are acquired in the constructor and released in the destructor.
+
+```cpp
+#include <fstream>
+#include <iostream>
+
+class FileHandler {
+public:
+    FileHandler(const std::string& filename) {
+        file.open(filename);
+        if (!file.is_open()) {
+            throw std::runtime_error("Failed to open file");
+        }
+    }
+
+    ~FileHandler() {
+        if (file.is_open()) {
+            file.close();
+        }
+    }
+
+private:
+    std::fstream file;
+};
+
+int main() {
+    try {
+        FileHandler fh("nonexistentfile.txt");
+    } catch (const std::runtime_error& e) {
+        std::cerr << "Caught an exception: " << e.what() << std::endl;
+    }
+    return 0;
+}
+```
+
+## Summary
+
+- **Constructors**: Handle initialization errors.
+- **Member Functions**: Handle runtime errors and invalid inputs.
+- **Destructors**: Avoid throwing exceptions but catch and log if necessary.
+- **Resource Management (RAII)**: Ensure resources are properly managed with exception safety.
+
+By incorporating exception handling into these key areas, you ensure that your class is robust, resilient to errors, and maintains a consistent state even when exceptions occur.
+
+## Assignment 
+- Explore the abbreviation RAII
