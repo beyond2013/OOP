@@ -1,10 +1,14 @@
 # Object streams
 
-Object streams in C++ are used to perform input and output operations on objects of user-defined types. This involves serialization (writing an object's state to a stream) and deserialization (reading an object's state from a stream). The C++ standard library provides facilities for these operations using `ostream` for output and `istream` for input.
+- Object streams in C++ are used to perform input and output operations on objects of user-defined types.
+- This involves serialization (writing an object's state to a stream) and deserialization (reading an object's state from a stream).
+- The C++ standard library provides facilities for these operations using `ostream` for output and `istream` for input.
 
 ## Basic Concept
 
-To enable an object to be written to or read from a stream, you need to overload the insertion operator (`<<`) for output and the extraction operator (`>>`) for input.
+- To enable an object to be written to or read from a stream, you need to overload: 
+  + **the insertion operator (`<<`) for output**  
+  + **the extraction operator (`>>`) for input**
 
 ## Example Code
 

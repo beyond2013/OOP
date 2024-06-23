@@ -1,15 +1,22 @@
 # What are Exceptions?
 
-- In C++, exceptions are runtime errors or unexpected conditions that arise during program execution.
-- Examples include division by zero, attempting to access an out-of-bounds array element, or opening a file that doesn't exist.
+- In C++, exceptions are :
+  + Runtime errors or 
+  + unexpected conditions that arise during program execution.
+  + Examples include:
+    * division by zero
+    * attempting to access an out-of-bounds array element
+    * or opening a file that doesn't exist
 
 ## Exception Handling Mechanism
 
-C++ provides a mechanism to handle these exceptions gracefully, preventing program crashes and maintaining program flow. It involves three keywords:
-
-- **try:** Encloses the code block that might throw an exception.
-- **throw:** Signals the occurrence of an exception within the `try` block.
-- **catch:** Catches the thrown exception and provides a way to handle it.
+- C++ provides a mechanism to handle these exceptions **gracefully**
+  + preventing program crashes and
+  + maintaining program flow.
+- It involves three keywords:
+  + **try:** Encloses the code block that might throw an exception.
+  + **throw:** Signals the occurrence of an exception within the `try` block.
+  + **catch:** Catches the thrown exception and provides a way to handle it.
 
 ## Steps:
 
@@ -19,7 +26,7 @@ C++ provides a mechanism to handle these exceptions gracefully, preventing progr
 
 2. **`throw` Statement:**
    - If an error condition arises within the `try` block, use the `throw` statement to signal the exception.
-   - The `throw` statement can throw any expression, including objects derived from the `std::exception` class (the base class for most standard exceptions).
+   - The `throw` statement can throw any exception, including objects derived from the `std::exception` class (the base class for most standard exceptions).
 
 3. **`catch` Block:**
    - One or more `catch` blocks follow the `try` block.
@@ -51,8 +58,13 @@ catch (...) {
 
 int main()
 {
-    int numerator = 10;
-    int denominator = 0;
+    int numerator ;
+    int denominator;
+
+    std::cout<< "Enter  value for numerator \t";
+    std::cin>>numerator;
+    std::cout<< "Enter  value for denominator \t";
+    std::cin>>denominator;
 
     try
     {
