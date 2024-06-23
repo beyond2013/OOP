@@ -21,7 +21,7 @@ First, define a class with some data members.
 ```cpp
 #include <iostream>
 #include <string>
-
+#include <fstream>
 class Person {
 public:
     std::string name;
