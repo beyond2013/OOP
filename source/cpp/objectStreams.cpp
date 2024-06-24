@@ -28,7 +28,7 @@ std::istream &operator>>(std::istream &is, Person &person)
 int main()
 {
     // Create a Person object
-    Person p1("John Doe", 30);
+    Person p1("Imran Ali", 46);
 
     // Serialize the object to a file
     std::ofstream outFile("person.txt");
