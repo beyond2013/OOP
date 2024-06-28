@@ -21,14 +21,15 @@ std::ostream &operator<<(std::ostream &os, const Person &person)
 // Overload the extraction (>>) operator
 std::istream &operator>>(std::istream &is, Person &person)
 {
-    is >> person.name >> person.age;
+    std::getline(is, person.name);
+    is >> person.age;
     return is;
 }
 
 int main()
 {
     // Create a Person object
-    Person p1("Imran Ali", 46);
+    Person p1("Syed Imran Ali Shah", 46);
 
     // Serialize the object to a file
     std::ofstream outFile("person.txt");
