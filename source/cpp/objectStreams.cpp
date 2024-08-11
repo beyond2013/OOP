@@ -14,14 +14,15 @@ public:
 // Overload the insertion (<<) operator
 std::ostream &operator<<(std::ostream &os, const Person &person)
 {
-    os << person.name << " " << person.age;
-    return os;
+    os << person.name << ","
+       << person.age;
+    return os; // returning the reference permits chaining
 }
 
 // Overload the extraction (>>) operator
 std::istream &operator>>(std::istream &is, Person &person)
 {
-    std::getline(is, person.name);
+    std::getline(is, person.name, ','); // getline reads untill it sees \n
     is >> person.age;
     return is;
 }

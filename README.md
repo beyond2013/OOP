@@ -38,10 +38,11 @@ Logistics for course offered in Computer Science and IT Department University of
 
 ## Course Assessment:
 
-Mid term exams:  30 marks  
+Mid term exams:  20 marks  
 Terminal exams:  40 marks  
-Quizes: 15 marks  
-Assignments: 15 marks  
+Quizes: 5 marks  
+Assignments: 10 marks  
+Practicals: 25 marks
 
 ## Reference Materials:
 
