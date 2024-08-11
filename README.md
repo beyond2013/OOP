@@ -55,10 +55,10 @@ Practicals: 25 marks
 
 ## Online Resources:
 
-1. https://gcc.gnu.org/
-2. https://stackoverflow.com/questions/tagged/c%2B%2B
-3. http://www.cplusplus.com/forum/
-4. https://www.coursera.org/learn/object-oriented-java
+1. [GNU gcc](https://gcc.gnu.org/)
+2. [StackOverflow questions tagged c++](https://stackoverflow.com/questions/tagged/c%2B%2B)
+3. [cplusplus forum](http://www.cplusplus.com/forum)
+4. [link to coursera object oriented(java) course](https://www.coursera.org/learn/object-oriented-java)
 
 ## Live code demo
 1. A quick game development live coding demo session delivered by [Ahsanullah](https://github.com/Ahsan-Sarbaz) can be found [here](source/dev)
