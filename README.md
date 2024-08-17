@@ -55,10 +55,11 @@ Practicals: 25 marks
 
 ## Online Resources:
 
-1. [GNU gcc](https://gcc.gnu.org/)
-2. [StackOverflow questions tagged c++](https://stackoverflow.com/questions/tagged/c%2B%2B)
-3. [cplusplus forum](http://www.cplusplus.com/forum)
-4. [link to coursera object oriented(java) course](https://www.coursera.org/learn/object-oriented-java)
+1. [PowerShell script for automated installation of Visual Studio code on Windows](./source/install-vscode.ps1)
+2. [GNU gcc](https://gcc.gnu.org/)
+3. [StackOverflow questions tagged c++](https://stackoverflow.com/questions/tagged/c%2B%2B)
+4. [cplusplus forum](http://www.cplusplus.com/forum)
+5. [link to coursera object oriented(java) course](https://www.coursera.org/learn/object-oriented-java)
 
 ## Live code demo
 1. A quick game development live coding demo session delivered by [Ahsanullah](https://github.com/Ahsan-Sarbaz) can be found [here](source/dev)
