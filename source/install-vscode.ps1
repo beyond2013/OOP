@@ -38,6 +38,7 @@ function Install-CppExtensions {
         "ms-vscode.cpptools",          # C/C++ Extension
         "ms-vscode.cmake-tools",       # CMake Tools
         "ms-vscode.cpptools-extension-pack" # C++ Extension Pack
+       "formulahendry.code-runner"    # Code Runner Extension 
     )
 
     foreach ($extension in $extensions) {
