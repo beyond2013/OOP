@@ -55,7 +55,7 @@ Practicals: 25 marks
 
 ## Online Resources:
 
-1. [PowerShell script for automated installation of Visual Studio code on Windows](./source/install-vscode.ps1)
+1. [Link to setup Visual Studio code on Windows](./markdown/vscodesetup.md)
 2. [GNU gcc](https://gcc.gnu.org/)
 3. [StackOverflow questions tagged c++](https://stackoverflow.com/questions/tagged/c%2B%2B)
 4. [cplusplus forum](http://www.cplusplus.com/forum)
