@@ -15,8 +15,6 @@ int main(int argc, char const *argv[])
     int f1_num, f1_den, f2_num, f2_den;
     char dummy; // dummy character to read the '/' in fraction 1/2
 
-    int result_numerator, result_denominator;
-
     cout << "Enter first fraction e.g. 2/3\t";
     cin >> f1_num >> dummy >> f1_den;
     cout << "Enter second fraction \t";
@@ -25,14 +23,17 @@ int main(int argc, char const *argv[])
     cout << "adding fractions results in \t";
     add_fractions(f1_num, f1_den, f2_num, f2_den);
     display_result();
+    cout << endl;
 
     cout << "subtracting fractions results in \t";
     sub_fractions(f1_num, f1_den, f2_num, f2_den);
     display_result();
+    cout << endl;
 
     cout << "multiplying fractions results in \t";
     multiply_fractions(f1_num, f1_den, f2_num, f2_den);
     display_result();
+    cout << endl;
 
     cout << "dividing fractions results in \t";
     divide_fractions(f1_num, f1_den, f2_num, f2_den);

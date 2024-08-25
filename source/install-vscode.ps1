@@ -1,8 +1,3 @@
-# 1. download this file on your PC. 
-# 2. Run PowerShell as administrator
-# 3. Navigate to the download folder
-# 4. Run this file by `.\install-vscode.ps1`
-
 # Function to detect system architecture and return the appropriate download URL
 function Get-VSCodeDownloadUrl {
     $architecture = (Get-WmiObject -Class Win32_OperatingSystem).OSArchitecture
