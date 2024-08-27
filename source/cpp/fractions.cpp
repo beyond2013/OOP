@@ -2,71 +2,109 @@
 
 using namespace std;
 
-int result_num, result_den;
-
-void add_fractions(int, int, int, int);
-void sub_fractions(int, int, int, int);
-void multiply_fractions(int, int, int, int);
-void divide_fractions(int, int, int, int);
-void display_result();
-
-int main(int argc, char const *argv[])
+struct Fraction
 {
-    int f1_num, f1_den, f2_num, f2_den;
+    int numerator;
+    int denominator;
+};
+
+Fraction add_fractions(Fraction, Fraction);
+Fraction sub_fractions(Fraction, Fraction);
+Fraction multiply_fractions(Fraction, Fraction);
+Fraction divide_fractions(Fraction, Fraction);
+void display_result(Fraction);
+
+int gcd(int, int);
+void simplify_fraction(Fraction &);
+
+int main()
+{
+    Fraction f1, f2, result;
     char dummy; // dummy character to read the '/' in fraction 1/2
 
     cout << "Enter first fraction e.g. 2/3\t";
-    cin >> f1_num >> dummy >> f1_den;
+    cin >> f1.numerator >> dummy >> f1.denominator;
     cout << "Enter second fraction \t";
-    cin >> f2_num >> dummy >> f2_den;
+    cin >> f2.numerator >> dummy >> f2.denominator;
 
-    cout << "adding fractions results in \t";
-    add_fractions(f1_num, f1_den, f2_num, f2_den);
-    display_result();
+    cout << "Adding fractions results in \t";
+    result = add_fractions(f1, f2);
+    display_result(result);
     cout << endl;
 
-    cout << "subtracting fractions results in \t";
-    sub_fractions(f1_num, f1_den, f2_num, f2_den);
-    display_result();
+    cout << "Subtracting fractions results in \t";
+    result = sub_fractions(f1, f2);
+    display_result(result);
     cout << endl;
 
-    cout << "multiplying fractions results in \t";
-    multiply_fractions(f1_num, f1_den, f2_num, f2_den);
-    display_result();
+    cout << "Multiplying fractions results in \t";
+    result = multiply_fractions(f1, f2);
+    display_result(result);
     cout << endl;
 
-    cout << "dividing fractions results in \t";
-    divide_fractions(f1_num, f1_den, f2_num, f2_den);
-    display_result();
-
+    cout << "Dividing fractions results in \t";
+    result = divide_fractions(f1, f2);
+    display_result(result);
     cout << endl;
+
     return 0;
 }
 
-void add_fractions(int f1_num, int f1_den, int f2_num, int f2_den)
+Fraction add_fractions(Fraction f1, Fraction f2)
 {
-    result_den = f1_den * f2_den;
-    result_num = f1_num * f2_den + f2_num * f1_den;
+    Fraction result;
+    result.denominator = f1.denominator * f2.denominator;
+    result.numerator = f1.numerator * f2.denominator + f2.numerator * f1.denominator;
+    simplify_fraction(result);
+    return result;
 }
 
-void sub_fractions(int f1_num, int f1_den, int f2_num, int f2_den)
+Fraction sub_fractions(Fraction f1, Fraction f2)
 {
-    result_den = f1_den * f2_den;
-    result_num = f1_num * f2_den - f2_num * f1_den;
+    Fraction result;
+    result.denominator = f1.denominator * f2.denominator;
+    result.numerator = f1.numerator * f2.denominator - f2.numerator * f1.denominator;
+    simplify_fraction(result);
+    return result;
 }
 
-void multiply_fractions(int f1_num, int f1_den, int f2_num, int f2_den)
+Fraction multiply_fractions(Fraction f1, Fraction f2)
 {
-    result_den = f1_den * f2_den;
-    result_num = f1_num * f2_num;
+    Fraction result;
+    result.denominator = f1.denominator * f2.denominator;
+    result.numerator = f1.numerator * f2.numerator;
+    simplify_fraction(result);
+    return result;
 }
 
-void divide_fractions(int f1_num, int f1_den, int f2_num, int f2_den)
+Fraction divide_fractions(Fraction f1, Fraction f2)
 {
-    result_num = f1_num * f2_den;
-    result_den = f1_den * f2_num;
+    Fraction result;
+    result.numerator = f1.numerator * f2.denominator;
+    result.denominator = f1.denominator * f2.numerator;
+    simplify_fraction(result);
+    return result;
 }
-void display_result()
+
+void display_result(Fraction f)
 {
-    cout << result_num << "/" << result_den;
+    cout << f.numerator << "/" << f.denominator;
+}
+
+int gcd(int a, int b)
+{
+    while (b != 0)
+    {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+void simplify_fraction(Fraction &f)
+{
+    int divisor = gcd(f.numerator, f.denominator);
+    f.numerator /= divisor;
+    f.denominator /= divisor;
 }
