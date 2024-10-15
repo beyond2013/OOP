@@ -1,6 +1,13 @@
 # Function Overloading
 
-Function overloading is a powerful feature in C++ that allows you to define multiple functions with the same name within the same scope, as long as their parameter lists differ. This enables you to create functions that perform similar tasks but can handle different types or numbers of arguments.
+- Function overloading is a powerful feature in C++ that allows you to **define multiple functions** with :
+   1. the same name 
+   2. within the same scope,
+- as long as their parameter lists differ
+
+- This enables you to create functions that perform **similar tasks** but can **handle different**:
+  1.  types of arguments.
+  2.  different number of arguments.
 
 Here's a breakdown of function overloading:
 
@@ -48,4 +55,6 @@ In this example:
 
 ## Further Exploration:
 
-Function overloading is a fundamental concept in C++. You can explore more complex scenarios involving multiple parameters and const-correctness to gain a deeper understanding of its capabilities. Remember, using function overloading effectively can lead to cleaner, more maintainable, and expressive C++ code.
+- Function overloading is a fundamental concept in C++.
+- You can explore more complex scenarios involving multiple parameters and const-correctness to gain a deeper understanding of its capabilities. 
+- Remember, using function overloading effectively can lead to cleaner, more maintainable, and expressive C++ code.
