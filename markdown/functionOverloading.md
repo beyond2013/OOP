@@ -46,6 +46,8 @@ In this example:
 * **Compiler Disambiguation:** While the compiler can usually determine the correct overloaded function based on argument types, there can be ambiguous cases. In such scenarios, you might need to explicitly cast arguments or change parameter names to improve clarity.
 * **Default Arguments:** Function overloading can be combined with default arguments to provide flexibility in function calls.
 
+- [link to a program which uses default arguments](../source/cpp/defaultarguments.cpp)
+
 ## Further Exploration:
 
 Function overloading is a fundamental concept in C++. You can explore more complex scenarios involving multiple parameters and const-correctness to gain a deeper understanding of its capabilities. Remember, using function overloading effectively can lead to cleaner, more maintainable, and expressive C++ code.

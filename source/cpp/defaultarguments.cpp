@@ -42,7 +42,7 @@ int main()
     // Call with no arguments (uses default message and separator)
     PrintMessage();
     */
-    cout << power() << endl;
+    cout << power() << endl; // this line would cause problems due to default arguments
     cout << power(2) << endl;
     cout << power(2, 3) << endl;
     cout << power(4) << endl;
