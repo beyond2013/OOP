@@ -3,10 +3,6 @@ using namespace std;
 class Distance
 // English Distance class
 {
-private:
-    int feet;
-    float inches;
-
 public:
     // constructor (no args)
     Distance() : feet(0), inches(0.0)
@@ -30,6 +26,10 @@ public:
         cout << feet << "\'-" << inches << '\"';
     }
     Distance operator+(Distance) const; // add 2 distances
+
+private:
+    int feet;
+    float inches;
 };
 
 Distance Distance::operator+(Distance d2) const // return sum
