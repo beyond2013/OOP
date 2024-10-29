@@ -28,11 +28,14 @@ Remember, while operator overloading is powerful, it's important to use it judic
 - [Arithmetic Assignment operator +=](../source/cpp/OverloadedAA.cpp)
 - [Overloaded subscript operator []](../source/cpp/arrover3.cpp)
 
-## Assignment Due 29 October 2024
+## Assignment Due 05 November 2024
 
-To practice and have a better understanding of the concept do the following:
-- Create a class Point which can represent point on graph with two major axis, x and y 
-- Create two data members of the class should be integers with appropriate names and scope
-- Create default and 2 argument constructor for the point class
-- Overload the binary operator which can add two points e.g. p1(2, 3) and p2(4, 5), the addition p1 + p2 should give (2+4=6, 3+5=8)
-- You may take help of the [Point class](../source/cpp/Point.cpp)
+Modify the [Point class](../source/cpp/Point.cpp) following instructions below:
+
+1. Overload binary operator `+` and `-` 
+
+   - Given point objects `P1(6, 8)`, `P2(3, 2)` `Sum(0,0)` and `Difference(0,0)`, the code should allow the syntax `Sum = P1 + P2;` and `Difference = P1 - P2`
+
+2. Overload the comparison operator `>`
+
+   - Given point objects `P1(6, 8)`, `P2(3, 2)`, the code should allow the syntax `if(P1 > P2){ cout << "Object P1 is greater than P2"};`
