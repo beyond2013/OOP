@@ -20,19 +20,19 @@ public:
         cout << "Enter inches: ";
         cin >> inches;
     }
-    void showdist() const
+    void showdist()
     // display distance
     {
         cout << feet << "\'-" << inches << '\"';
     }
-    Distance operator+(Distance) const; // add 2 distances
+    Distance operator+(Distance); // add 2 distances
 
 private:
     int feet;
     float inches;
 };
 
-Distance Distance::operator+(Distance d2) const // return sum
+Distance Distance::operator+(Distance d2) // return sum
 {
     int f = feet + d2.feet;
     // add the feet
@@ -49,7 +49,7 @@ int main()
 {
     Distance dist1, dist3, dist4;  // define distances
     dist1.getdist();               // get dist1 from user
-    Distance dist2(11, 6.25);      // define, initialize dist2
+    Distance dist2(11, 9.0);       // define, initialize dist2
     dist3 = dist1 + dist2;         // single '+' operator
     dist4 = dist1 + dist2 + dist3; // multiple ‘+’ operators
     cout << "dist1 = ";
