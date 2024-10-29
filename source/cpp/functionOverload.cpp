@@ -1,5 +1,10 @@
 #include <iostream>
 #include <string>
+/**
+   A sample function which is overloaded
+   to demonstrate how function overloading works
+   the function can be called using int and double
+*/
 void PrintNumber(int num)
 {
     std::cout << "Integer: " << num << std::endl;
