@@ -3,6 +3,11 @@
 
 class Account
 {
+    /*
+    When a member is declared as protected, it can only be accessed:
+     Within the class that defines it
+     By derived (child) classes that inherit from the class
+    */
 protected:
     std::string name;
     double balance;
