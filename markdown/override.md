@@ -57,3 +57,28 @@ int main() {
 
 * The function call in the `main` function depends on the object's type at runtime (runtime polymorphism). When you call `deposit` on a `SavingAccount` object, the overridden version with interest calculation is executed.
 * Overriding enables you to create a hierarchy of classes with specialized functionalities while maintaining a common foundation in the base class.
+
+## Assignment Due 19 November 2024
+**Assignment Title: "E-Commerce Discount System"**
+
+**Objective:**  
+Develop a C++ program simulating an e-commerce discount system where various types of users receive different discount rates on their purchases. The assignment will help practice inheritance, function overriding, and virtual functions.
+
+**Requirements:**
+
+1. **Base Class: `User`**
+   - Data members: `name` (string), `userID` (int)
+   - Virtual function: `getDiscount()`, which returns a default discount rate (e.g., 0%).
+
+2. **Derived Classes:**
+   - **`GuestUser`** (inherits `User`)
+     - Overrides `getDiscount()` to apply a low discount rate (e.g., 5%).
+   - **`RegisteredUser`** (inherits `User`)
+     - Additional data member: `purchaseAmount` (double)
+     - Overrides `getDiscount()` to apply a higher discount based on `purchaseAmount` (e.g., 10% if purchaseAmount > 100).
+   - **`PremiumUser`** (inherits `RegisteredUser`)
+     - Overrides `getDiscount()` to provide the highest discount rate (e.g., 20%).
+
+3. **Program Execution:**
+   - Instantiate objects of each user type (e.g., `GuestUser`, `RegisteredUser`, and `PremiumUser`).
+   - Use pointers to the base class `User` to call the `getDiscount()` function and display the appropriate discount for each type.
