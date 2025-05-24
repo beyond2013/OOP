@@ -28,7 +28,7 @@ Remember, while operator overloading is powerful, it's important to use it judic
 - [Arithmetic Assignment operator +=](../source/cpp/OverloadedAA.cpp)
 - [Overloaded subscript operator []](../source/cpp/arrover3.cpp)
 
-## Assignment Due 29 October 2024
+## Assignment Due 05 November 2024
 
 To practice and have a better understanding of the concept do the following:
 - Create a class Point which can represent point on graph with two major axis, x and y 
