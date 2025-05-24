@@ -49,7 +49,7 @@ Practicals: 25 marks
 1. [Starting Out with C++ from Control Structures to Objects, 9th Edition, Tony Gaddis.](https://amzn.to/3SOzc6z)
 2. [C++ How to Program, 10th Edition, Deitel & Deitel.](https://amzn.to/3H3bwZQ)
 3. [object Oriented Programming in C++, 3rd Edition by Robert Lafore](https://amzn.to/44R6mKj)
-4.[Java: How to Program, 9th Edition by Paul Deitel.](https://amzn.to/43FHcx3)
+4. [Java: How to Program, 9th Edition by Paul Deitel.](https://amzn.to/43FHcx3)
 5. [Beginning Java 2, 7th Edition by Ivor Horton](https://tinyurl.com/3y4dtvht)  
 6. [An Introduction to Object Oriented Programming with Java, 5th Edition by C. Thomas Wu.](https://amzn.to/4dszLwm)
 
