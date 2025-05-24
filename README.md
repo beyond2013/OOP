@@ -40,7 +40,7 @@ Logistics for course offered in Computer Science and IT Department University of
 
 Mid term exams:  20 marks  
 Terminal exams:  40 marks  
-Quizes: 5 marks  
+Quizzes: 5 marks  
 Assignments: 10 marks  
 Practicals: 25 marks
 
